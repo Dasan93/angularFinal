@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API:{
+    EndPoints:{
+      Northwind:'http://localhost:53987/v1/Analysis/Northwind/'
+    }
+  }
 };
 
 /*
