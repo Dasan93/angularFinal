@@ -6,8 +6,8 @@ export const environment = {
   production: false,
   API:{
     EndPoints:{
-      Northwind:'http://192.168.1.107:53987/v1/Analysis/Northwind/',
-      Login: 'http://192.168.1.51:3000/'
+      Northwind:'http://apis.northwind.com/API.NW.FINALLL/v1/Analysis/Northwind/',
+      Login: 'http://localhost:3000/'
     }
   }
 };

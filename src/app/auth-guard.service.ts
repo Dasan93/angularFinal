@@ -24,7 +24,7 @@ export class AuthGuardService {
       this.router.navigate(['/inicio']);
       return false;
     }
-
+    console.log('Si si awebo');
     return true;
   }
 }
