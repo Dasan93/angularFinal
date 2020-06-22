@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Proyecto Final</a>
+    <a class="navbar-brand" [routerLink]="['/Login']">Login</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
       
        
@@ -13,8 +13,8 @@
             Dashboard
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item"  [routerLink]="['/top5']">PiePiePie</a>
-            <a class="dropdown-item"  [routerLink]="['/histograma']">Serie Histórica</a>
+            <a class="dropdown-item"  [routerLink]="['/Pie']">Gráfica Pie</a>
+            <a class="dropdown-item"  [routerLink]="['/Barra']">Gráfica Barra</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Cerrar</a>
           </div>
@@ -22,6 +22,7 @@
        
       </ul>
      
-    </div>-->
-    <a class="nav-item" [routerLink]="['/inicio']">Cerrar Sesión</a>
+    </div>
+    <h3>{{mensaje}}</h3>
+    <a class="nav-item" [routerLink]="['/Login']">Cerrar Sesión</a>
   </nav>

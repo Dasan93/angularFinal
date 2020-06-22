@@ -34,10 +34,10 @@ export class InicioComponent implements OnInit {
       
       console.log(data['payload']['rol']);
       if(data['payload']['rol']=="Rol_Pie"){
-        this.router.navigate(['/top5'])
+        this.router.navigate(['/Pie'])
       }
       if(data['payload']['rol']=="Rol_Barras"){
-        this.router.navigate(['/histograma'])
+        this.router.navigate(['/Barra'])
       }
     });
   }

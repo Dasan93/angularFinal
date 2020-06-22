@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ChartsModule } from 'ng2-charts';
+import {MatDialogModule} from '@angular/material/dialog';
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import {NgSelectModule} from '@ng-select/ng-select';
@@ -14,6 +15,7 @@ import { NavbarComponent } from './components/navigation/navbar/navbar.component
 import { LineChartComponent } from './components/charts/line-chart/line-chart.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/charts/pie-chart/pie-chart.component';
+import { DialogExampleComponentComponent } from './pages/dialog-example-component/dialog-example-component.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +35,10 @@ import { PieChartComponent } from './components/charts/pie-chart/pie-chart.compo
     FormsModule,
     AppRoutingModule,
     ChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
+  entryComponents:[DialogExampleComponentComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA],
   providers: [],

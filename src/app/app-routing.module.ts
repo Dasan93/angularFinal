@@ -7,9 +7,9 @@ import { Top5Component } from './pages/top5/top5.component';
 
 
 const routes: Routes = [
-  {path:'inicio',component:InicioComponent},
-  { path: 'histograma', component: HistogramaComponent, canActivate: [AuthGuardService] },
-  {path:'top5',component: Top5Component, canActivate: [AuthGuardService] }
+  {path:'Login',component:InicioComponent},
+  { path: 'Barra', component: HistogramaComponent, canActivate: [AuthGuardService] },
+  {path:'Pie',component: Top5Component, canActivate: [AuthGuardService] }
 ];
 
 @NgModule({
